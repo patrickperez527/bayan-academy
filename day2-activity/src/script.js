@@ -5,9 +5,9 @@ const temp = prompt('Write your temperature');
 // 36.4 below low
 
 if(temp <= 36.4){
-    alert('low');
+    alert('Your temperature is low');
 } else if (temp <= 37.2) {
-    alert('normal');
+    alert('Your temperature is normal');
 } else {
-    alert('high');
+    alert('Your temperature is high');
 }
