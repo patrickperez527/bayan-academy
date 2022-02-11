@@ -13,6 +13,5 @@ while (inputPass != userPass) {
   counter += 1;
   if(counter === 2){
       break;
-      alert('bad password');
   } 
 }
