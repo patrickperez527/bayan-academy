@@ -12,7 +12,7 @@ form.addEventListener('submit', e => {
     if(inputTemp.value == '') {
         // returns if the input field is blank
         // alert('Input field cannot be blank.');
-        tempMsg.innerText = 'This field is required.';
+        tempMsg.innerText = 'This field cannot be blank.';
     } else if (inputTemp.value <= 36.4) {
         // 36.4 below = low temperature
         // alert('Your temperature is low');
