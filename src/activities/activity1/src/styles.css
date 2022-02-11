@@ -43,3 +43,19 @@ body {
 .bxs-badge-check {
     font-size: 90px
 }
+
+.error{
+    color: red;
+}
+
+.forms-inputs{
+    display: flex;
+}
+
+@media only screen and (max-width: 1280px){
+
+    .forms-inputs{
+        display: block;
+        margin-bottom: 0;
+    }
+}
