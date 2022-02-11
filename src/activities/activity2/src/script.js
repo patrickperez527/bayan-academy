@@ -4,14 +4,16 @@
 //3 incorrect enter of password, add alert("Your account has been blocked!");
 
 //database password
-const userPass = "Password123";
-let inputPass = prompt("Please enter your password:");
-let counter = 0;
+function myFunction(){
+    const userPass = "Password123";
+    let inputPass = prompt("Please enter your password:");
+    let counter = 0;
 
-while (inputPass != userPass) {
-  inputPass = prompt("Please enter your password:");
-  counter += 1;
-  if(counter === 2){
-      break;
-  } 
+    while (inputPass != userPass) {
+    inputPass = prompt("Please enter your password:");
+    counter += 1;
+    if(counter === 2){
+        break;
+    } 
+    }
 }
