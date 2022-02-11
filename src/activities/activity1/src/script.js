@@ -3,7 +3,6 @@
 const form = document.querySelector('#my-form');
 const inputTemp = document.querySelector('#temp');
 const tempMsg = document.querySelector('#msg');
-const errorMsg = document.querySelector('.error');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -32,7 +31,7 @@ form.addEventListener('submit', e => {
     } else {
         // returns if you enter a string
         // alert('Invalid temperature');
-        tempMsg.innerText = 'The temperature must be a number!';
+        tempMsg.innerText = 'The temperature must be an integer or a float!';
     }   
 })
 
