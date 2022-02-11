@@ -6,9 +6,13 @@ const tempMsg = document.querySelector('#msg');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-    if(inputTemp.value === '') {
+    // this is for white spaces 
+    inputTemp.value =inputTemp.value.replace(/^\s+|\s+$/g, "");
+
+    if(inputTemp.value == '') {
         // returns if the input field is blank
-        alert('Input field cannot be blank.');
+        // alert('Input field cannot be blank.');
+        tempMsg.innerText = 'This field is required.';
     } else if (inputTemp.value <= 36.4) {
         // 36.4 below = low temperature
         // alert('Your temperature is low');
