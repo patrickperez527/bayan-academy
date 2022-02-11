@@ -31,8 +31,7 @@ form.addEventListener('submit', e => {
     } else {
         // returns if you enter a string
         // alert('Invalid temperature');
-        tempMsg.style.color = 'red';
-        tempMsg.innerText = 'Invalid input';
+        tempMsg.innerText = 'Invalid input.';
     }   
 })
 
