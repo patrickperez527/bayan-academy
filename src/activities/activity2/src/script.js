@@ -8,8 +8,11 @@ const userPass = "Password123";
 let inputPass = prompt("Please enter your password:");
 let counter = 0;
 
-while (inputPass != userPass > 3) {
-  inputPass = prompt("Please enter your password:"); 
+while (inputPass != userPass) {
+  inputPass = prompt("Please enter your password:");
+  counter += 1;
+  if(counter === 2){
+      break;
+      alert('bad password');
+  } 
 }
-
-console.log("Thank you for providing the right password!");
