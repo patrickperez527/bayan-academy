@@ -29,7 +29,7 @@ form.addEventListener('submit', e => {
         tempMsg.innerText = 'Your temperature is high.';
         inputTemp.value = '';
     } else {
-        // returns if you enter a string
+        // returns if you enter a string or special characters
         // alert('Invalid temperature');
         tempMsg.innerText = 'The temperature must be an integer or a float!';
     }   

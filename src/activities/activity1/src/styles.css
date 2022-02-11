@@ -12,6 +12,10 @@
     z-index: 1;
 }
 
+.errorMsg{
+    color: coral;
+}
+
 #home-button{
     position: fixed;
     top: 20px;
@@ -20,3 +24,10 @@
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 1669px){
+
+    #cover{
+        height: 100%;
+    }
+    
+}
