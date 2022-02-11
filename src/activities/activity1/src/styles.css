@@ -1,61 +1,26 @@
-body {
-    background: #000
-}
-
-.card {
-    border: none;
-    height: 320px
-}
-
-.forms-inputs {
-    position: relative
-}
-
-.forms-inputs span {
-    position: absolute;
-    top: -18px;
-    left: 10px;
-    background-color: #fff;
-    padding: 5px 10px;
-    font-size: 15px
-}
-
-.forms-inputs input {
-    height: 50px;
-    border: 2px solid #eee
-}
-
-.forms-inputs input:focus {
-    box-shadow: none;
-    outline: none;
-    border: 2px solid #000
-}
-
-.btn {
-    height: 50px
-}
-
-.success-data {
+#cover {
+    height: 100%;
+    text-align: center;
     display: flex;
-    flex-direction: column
+    align-items: center;
+    position: relative;
 }
 
-.bxs-badge-check {
-    font-size: 90px
+#cover-caption {
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .error{
     color: red;
 }
 
-.forms-inputs{
-    display: flex;
+#home-button{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 99;
+    border-radius: 10px;
 }
 
-@media only screen and (max-width: 1280px){
-
-    .forms-inputs{
-        display: block;
-        margin-bottom: 0;
-    }
-}
