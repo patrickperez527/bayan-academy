@@ -5,15 +5,17 @@
 
 //database password
 function myFunction(){
-    const userPass = "Password123";
-    let inputPass = prompt("Please enter your password:");
+    const userPass = 'Password123';
+    let inputPass = prompt('Please enter your password:');
     let counter = 0;
 
-    while (inputPass != userPass) {
-    inputPass = prompt("Please enter your password:");
-    counter += 1;
-    if(counter === 2){
-        break;
-    } 
+    while (inputPass != userPass && ++ counter < 3) {
+        inputPass = prompt('Please enter your password:');
+    }
+    if (counter == 3) {
+        alert('Your account has been blocked!');
+    } else {
+        alert('Thank you for providing the right password!');
     }
 }
+
