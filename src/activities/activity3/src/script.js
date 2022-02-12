@@ -17,9 +17,11 @@ function myFunction(){
         const removeTodo = prompt("Enter the item's index you want to delete:");
         console.log(`${todos[removeTodo]} has been deleted!`);
         todos.splice(removeTodo, 1);
+    } else {
+        alert('Invalid command!');
     }
     userInput = prompt("Enter a command (New, List, Delete, Quit)");
     }
-    console.log("Quitting...");
-    console.log("App has been closed");
+    alert("Quitting...");
+    alert("App has been closed");
 }
