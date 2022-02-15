@@ -26,7 +26,7 @@ const fullNames = [
 ]
 
 const removeFirstName = fullNames.map(function(firstname){
-    return firstname.first.substring();
+    return firstname.first.substring(6, fullNames.indexOf(''));
 })
 
 console.log(removeFirstName);
