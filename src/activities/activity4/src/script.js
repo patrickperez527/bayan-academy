@@ -10,5 +10,7 @@ function getTemperature(tempValue){
         return 'Low body temperature';
     }
 }
-// test it here
-getTemperature();
+// test 
+console.log(getTemperature(38)); // High body temperature
+console.log(getTemperature(36.5)); // Normal body temperature
+console.log(getTemperature(36.3)); // Low body temperature

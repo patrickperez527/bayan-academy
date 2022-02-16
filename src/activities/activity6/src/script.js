@@ -8,7 +8,7 @@ const fullNames = [
         last: 'Tamayo'
     },
     {
-        first: 'Travis Michael',
+        first: 'John Michael',
         last: 'Tamayo'
     },
     {
@@ -25,8 +25,8 @@ const fullNames = [
     },
 ]
 
-const removeFirstName = fullNames.map(function(firstname){
-    return firstname.first.substring(0, 6);
+const getFirstname = fullNames.map(firstname => {
+    return firstname.first;
 })
 
-console.log(removeFirstName);
+console.log(getFirstname);

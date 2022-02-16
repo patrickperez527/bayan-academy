@@ -9,5 +9,5 @@ const square = {
     },
 };
 // test
-// square.area();
-// square.perimeter();
+console.log(square.area(5)); // 25
+console.log(square.perimeter(4)); // 16
