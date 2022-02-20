@@ -21,5 +21,5 @@ const highestScore = animes.reduce((max, min) => {
     if (max > min) {
         return animes;
     }
-    return max; // 2.5
+    return max;
 })
