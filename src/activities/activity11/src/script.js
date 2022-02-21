@@ -9,6 +9,6 @@ function factorialize(num) {
 }
 // Test Cases
 console.log(factorialize(5)); // 120
-console.log(factorialize(10)); // 1
-console.log(factorialize(20)); // 1
+console.log(factorialize(10)); // 3628800
+console.log(factorialize(20)); // 2432902008176640000
 console.log(factorialize(0)); // 1
