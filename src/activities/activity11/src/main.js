@@ -20,3 +20,12 @@ function sum(...nums){
     return nums.reduce((total, element) => total + element);
 }
 // sum(1,2,3,4) = 10
+
+// coding challengge
+function factorialize(num){
+    let prod = 1;
+    for (let i = 2; i <= num; i++) {
+        prod *= i;
+    }
+    return prod;
+}
