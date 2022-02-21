@@ -13,8 +13,8 @@ form.addEventListener('submit', e => {
         // returns if the input field is blank
         // alert('Input field cannot be blank.');
         tempMsg.innerText = 'Temperature field cannot be blank.';
-    } else if (inputTemp.value <= 36.4) {
-        // 36.4 below = low temperature
+    } else if (inputTemp.value < 36.5) {
+        // 36.5 below = low temperature
         // alert('Your temperature is low');
         tempMsg.innerText = 'Your temperature is low.';
         inputTemp.value = '';
@@ -23,8 +23,8 @@ form.addEventListener('submit', e => {
         // alert('Your temperature is normal');
         tempMsg.innerText = 'Your temperature is normal.';
         inputTemp.value = '';
-    } else if (inputTemp.value >= 37.3){
-        // 37.3 and above = high temperature
+    } else if (inputTemp.value > 37.2){
+        // 37.2 above = high temperature
         // alert('Your temperature is high');
         tempMsg.innerText = 'Your temperature is high.';
         inputTemp.value = '';
