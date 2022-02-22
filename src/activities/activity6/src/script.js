@@ -25,8 +25,8 @@ const fullNames = [
     },
 ]
 
-const getFirstname = fullNames.map(firstname => {
-    return firstname.first;
+const firstNames = fullNames.map(firstName => {
+    return firstName.first;
 })
 
-console.log(getFirstname);
+console.log(firstNames);
