@@ -20,11 +20,11 @@ function getRandomNumber(){
 
 // hex
 hexValue.addEventListener('click', () => {
-    let randomHex = '#';
+    let randomHexColor = '#';
     for (let i = 0; i < 6; i++) {
-        randomHex += hex[getRandomHex()];
-        document.body.style.background = randomHex;
-        value.textContent = randomHex;
+        randomHexColor += hex[getRandomHex()];
+        document.body.style.background = randomHexColor;
+        value.textContent = randomHexColor;
     }
 })
 
