@@ -1,29 +1,150 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
-body{
-    background: #ababab;
-    font-family: 'Poppins', sans-serif;
+:root {
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --max-width: 1170px;
+  --fixed-width: 620px;
 }
 
-.content{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1{
-    font-size: 50px;
-    margin-bottom: 10px;
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden
 }
 
-.btn{
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: #000;
-    color: white;
-    font-size: 20px;
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: #fff;
+  height: 3rem;
+  display: grid;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.nav-center {
+  width: 90vw;
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-center h4 {
+  font-size: 16px;
+  letter-spacing:  0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+  color: darkgoldenrod;
+}
+
+.nav-links {
+  display: flex;
+}
+
+nav a {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000;
+  letter-spacing: 0.1rem;
+  margin-right: 1rem;
+}
+
+nav a:hover{
+  text-decoration: underline;  
+}
+
+main {
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 40px;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.color {
+  color: #fff;
+}
+
+.btn-hero {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background: transparent;
+  color: #000;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  border: 1px solid #000;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 5);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.btn-hero:hover {
+  color: #fff;
+  background: #000;
+}
+
+.current{
+  color: darkgoldenrod;
+}
+
+@media screen and (min-width: 800px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h2, h4 {
+    line-height: 1;
+  }
 }
