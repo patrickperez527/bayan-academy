@@ -9,8 +9,8 @@ form.addEventListener("submit", function(e) {
   const userInput = product.value;
   const quantityInput = quantity.value;
   const newLi = document.createElement("li");
-  newLi.innerText = userInput + ': ';
-  newLi.innerText += quantityInput;
+  newLi.innerText = 'Product: ' + userInput + ' - ';
+  newLi.innerText += 'Quantity: '+ quantityInput;
   list.append(newLi);
   product.value = "";
   quantity.value = "";
