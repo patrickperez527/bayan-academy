@@ -1,16 +1,17 @@
 const form = document.querySelector("#test-form");
-const input = document.querySelector("input");
-const quantity = document.querySelector('#qty');
+const product = document.querySelector("#product");
+const quantity = document.getElementById('qty');
 const list = document.querySelector("#list");
 // const btn = document.querySelector("#test-btn");
 
 form.addEventListener("submit", function(e) {
   e.preventDefault();
-  const userInput = input.value;
+  const userInput = product.value;
   const quantityInput = quantity.value;
   const newLi = document.createElement("li");
-  newLi.innerText = userInput + quantityInput;
+  newLi.innerText = userInput + ': ';
+  newLi.innerText += quantityInput;
   list.append(newLi);
-  input.value = "";
+  product.value = "";
   quantity.value = "";
 })
