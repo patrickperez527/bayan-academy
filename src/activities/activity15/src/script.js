@@ -1,24 +1,16 @@
-function addItem() {
-    const todoInput = document.getElementById("todo-input");
-    const todoValue = todoInput.value;
-    const todos = document.getElementById("todos");
-    const li = document.createElement("li");
+const form = document.querySelector("#test-form");
+const input = document.querySelector("input");
+const quantity = document.querySelector('#qty');
+const list = document.querySelector("#list");
+// const btn = document.querySelector("#test-btn");
 
-    if (todoInput.value === ''){
-      return;
-    }
-
-    li.textContent = todoValue + ' ';
-    const deleteTodo = document.createElement('a');
-    deleteTodo.innerHTML = '<i class="fa fa-trash-o" style="font-size:20px;color:red"></i>';
-  
-    deleteTodo.addEventListener("click", deleteItem);
-    li.appendChild(deleteTodo);
-
-    todos.appendChild(li);
-    todoInput.value = "";
-
-    function deleteItem() {
-        todos.removeChild(li);
-    }
-}
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+  const userInput = input.value;
+  const quantityInput = quantity.value;
+  const newLi = document.createElement("li");
+  newLi.innerText = userInput + quantityInput;
+  list.append(newLi);
+  input.value = "";
+  quantity.value = "";
+})
