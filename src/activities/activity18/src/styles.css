@@ -1,3 +1,7 @@
+* {
+    transition: 1s linear;
+}
+
 #cover {
     height: 100%;
     text-align: center;
