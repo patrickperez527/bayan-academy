@@ -5,24 +5,32 @@ const fakeRequestPromise = (url) => {
         if (delay > 4000) {
           reject(`Connection timeout`);
         } else {
-          fulfill(`Here is your fake data from ${url}`);
+          fulfill(`Here is your fake data from: ${url}`);
         }
       }, delay)
     })
 }
   
 async function makeRequests() {
-    let data = await fakeRequestPromise('test.com');
-    console.log(data);
+    try {
+        let firstRequest = await fakeRequestPromise('test/page1.com');
+        console.log(firstRequest);
+    
+        let secondRequest = await fakeRequestPromise('test/page2.com');
+        console.log(secondRequest);
+    
+        let thirdRequest = await fakeRequestPromise('test/page3.com');
+        console.log(thirdRequest);
+    
+        let fourthRequest = await fakeRequestPromise('test/page4.com');
+        console.log(fourthRequest);
 
-    let data2 = await fakeRequestPromise('test.com');
-    console.log(data2);
-
-    let data3 = await fakeRequestPromise('test.com');
-    console.log(data3);
-
-    let data4 = await fakeRequestPromise('test.com');
-    console.log(data4);
+    } catch(err) {
+        console.log('Connection error: ', err);
+        
+    } finally {
+        console.log('End of request')
+    }
 }
 
 makeRequests();

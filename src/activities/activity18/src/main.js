@@ -243,3 +243,5 @@ async function printRainbow() {
 }
 
 printRainbow()
+
+// **********************ASYNC WAY************************ //
