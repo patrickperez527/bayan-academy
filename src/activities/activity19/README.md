@@ -1,1 +1,0 @@
-# link https://patrickperez527.github.io/bayan-academy/
