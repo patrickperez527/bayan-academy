@@ -1,5 +1,5 @@
 function factorialize(num) {
-    // will return 1 num is 0 or 1
+    // will return 1 if num is 0 or 1
     if (num === 0 || num === 1)
       return 1;
     for (var i = num - 1; i >= 1; i--) {
